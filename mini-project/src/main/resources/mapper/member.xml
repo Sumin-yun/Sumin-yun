@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <insert id="insertMember" parameterType="ECproject.miniproject.domain.Member">
+       
+        INSERT INTO tbl_member(
+            id,
+            pwd,
+            name,
+            birth,
+            address  
+        )VALUES(
+            #{id},
+            #{pwd},
+            #{name},
+            #{birth},
+            #{address}        
+        )
+    </insert>
